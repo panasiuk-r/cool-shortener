@@ -1,4 +1,5 @@
 # cool-shortener
+
 Really quick guide:
 To create a shorter URL, you need to:
 PUT http://your_host:your_port/shorten,
