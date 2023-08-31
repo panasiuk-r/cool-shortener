@@ -1,13 +1,13 @@
 # cool-shortener
 Really quick guide:
 To create a shorter URL, you need to:
-PUT http://your_host:your_port/shorten
+PUT http://your_host:your_port/shorten,
 with a body like this:
 {
   "url": "http://www.facebook.com"
-}
+}.
 If you want to get URL redirection:
-GET http://your_host:your_port/shorten?url=http://xpl.ac/Vddcs
+GET http://your_host:your_port/shorten?url=http://xpl.ac/Vddcs.
 All configuration can be changed in the config.env file. Be aware that if you're changing database-related configuration, update it in the docker-compose file as well.
 
 HOW TO SCALE:
