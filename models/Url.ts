@@ -10,10 +10,10 @@ interface UrlAttributes {
 const Url = sequelize.define<Model<UrlAttributes>>('Url', {
   shortUrl: {
     type: DataTypes.STRING,
-    primaryKey: true,
+		primaryKey: true,
     unique: true,
   }, 
-  originalUrl: {
+	originalUrl: {
     type: DataTypes.STRING,
     allowNull: false,
   }
