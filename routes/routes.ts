@@ -23,7 +23,7 @@ app.post('/shorten', (request: Request, response: Response) => {
 	addUrl(request.body.url || '').then(url => {
  		response.json(url)
 	}).catch(error => {
-		console.error('An error occurred:', error.message)
+		console.log('An error occurred:', error.message)
 		response.status(500).json({ error: 'An error occurred' })
 	})
 })

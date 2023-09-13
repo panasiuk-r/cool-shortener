@@ -3,17 +3,17 @@ import { DataTypes, Model } from 'sequelize'
 import { sequelize } from '../db/connection'
 
 interface UrlAttributes {
-  shortUrl: string
+  shortUrl: string,
   originalUrl: string
 }
 
 const Url = sequelize.define<Model<UrlAttributes>>('Url', {
   shortUrl: {
     type: DataTypes.STRING,
-		primaryKey: true,
+    primaryKey: true,
     unique: true,
   }, 
-	originalUrl: {
+  originalUrl: {
     type: DataTypes.STRING,
     allowNull: false,
   }
